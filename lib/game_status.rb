@@ -20,5 +20,5 @@ def won?(board)
     board[win_combination[0]] == "X" &&
     board[win_combination[1]] == "X" &&
     board[win_combination[2]] == "X"
-    end
   end
+end
