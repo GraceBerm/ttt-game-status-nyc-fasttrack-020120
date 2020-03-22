@@ -53,5 +53,4 @@ def winner(board)
      end
   end
   winner
-  end
 end
