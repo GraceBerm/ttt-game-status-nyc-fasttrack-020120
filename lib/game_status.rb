@@ -30,6 +30,6 @@ won_combination
 end
 
 def full?(board)
-  if position_taken(board, index).all? do |board_spots|
+  position_taken(board, index).all? do |board_spots|
   end
 end
