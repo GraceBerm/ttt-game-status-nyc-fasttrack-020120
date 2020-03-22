@@ -33,3 +33,4 @@ def full?(board)
   if position_taken(board, index).all? do |board_spot|
   end
 end
+end
