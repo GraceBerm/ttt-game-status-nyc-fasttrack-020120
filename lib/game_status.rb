@@ -15,16 +15,17 @@ WIN_COMBINATIONS = [
   [2,4,6]   # Right diagonal
 ]
 
+# board = ["X", " ", " ", "X", " ", " ", "X", " ", " "]
 def won?(board)
-  WIN_COMBINATIONS.detect do |win_combination|
-    if (board[win_combination[0]] == "X" &&
-       board[win_combination[1]] == "X" &&
-       board[win_combination[2]] == "X")
-       true
-    elsif (board[win_combination[0]] == "O" &&
-       board[win_combination[1]] == "O" &&
-       board[win_combination[2]] == "O")
-       true
+  won_combination = nil
+
+  WIN_COMBINATIONS.each do |win_combination|
+    if (board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X")
+       won_combination = win_combination
+    elsif (board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O")
+       won_combination = win_combination
      end
   end
+
+  won_combination
 end
