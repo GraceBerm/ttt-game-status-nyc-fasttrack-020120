@@ -25,6 +25,5 @@ def won?(board)
     board[win_combination[1]] == "O" &&
     board[win_combination[2]] == "O"
   end
-end
   end
 end
