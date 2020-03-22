@@ -26,6 +26,5 @@ def won?(board)
        won_combination = win_combination
      end
   end
-
-  won_combination
+won_combination
 end
